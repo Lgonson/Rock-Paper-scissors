@@ -24,83 +24,68 @@ while life_user > 0 and life_computer > 0:
 
     user = input(f"Which option do you want to choose? Scissors, Rock or Paper? ")
     user = user.capitalize()
+    print(f"You have choosen {user}") 
     
     if user == computer:        
         print(f"Both've choosen {computer}.")
-        print("So, it is a Draw")
-        print("--------------------------------------------------------")
-        print("NEXT TURN - LET'S DO IT")
-        print("--------------------------------------------------------")        
-   
+        print("So, it is a Draw")    
+        
+
     elif user != computer:
         
         if user == "Scissors":
-            print(f"You have choosen {user}")        
+            
             if computer == "Rock":
                 print(f"The computer has choosen {computer}.")
                 print("so, you Loose. :( ")
                 life_user = life_user - 1
                 print(f"You still have: {life_user} lives")
                 print(f"The computer has still {life_computer} live/s.")
-                print("--------------------------------------------------------")
-                print("NEXT TURN - LET'S DO IT")
-                print("--------------------------------------------------------")        
-
+                
             elif computer == "Paper":
                 print(f"The computer has choosen {computer}.")
                 print("You're dammm goood.")
                 life_computer = life_computer - 1
                 print(f"You still have: {life_user} lives")
                 print(f"The computer has still {life_computer} live/s.")
-                print("--------------------------------------------------------")
-                print("NEXT TURN - LET'S DO IT")
-                print("--------------------------------------------------------")        
-
-        elif user == "Rock":
-            print(f"You have choosen {user}")        
+               
+        elif user == "Rock":   
+            
             if computer == "Paper":
                 print(f"The computer has choosen {computer}.")
                 print("so, you Loose. :( ")
                 life_user = life_user - 1
                 print(f"You still have: {life_user} lives")
                 print(f"The computer has still {life_computer} live/s.")
-                print("--------------------------------------------------------")
-                print("NEXT TURN - LET'S DO IT")
-                print("--------------------------------------------------------")        
-
+                
             elif computer == "Scissors":
                 print(f"The computer has choosen {computer}.")
                 print("You're dammm goood.")
                 life_computer = life_computer - 1
                 print(f"You still have: {life_user} lives")
                 print(f"The computer has still {life_computer} live/s.")
-                print("--------------------------------------------------------")
-                print("NEXT TURN - LET'S DO IT")
-                print("--------------------------------------------------------")        
-
+               
         elif user == "Paper":
-            print(f"You have choosen {user}")
-
+            
             if computer == "Scissors":
                 print(f"The computer has choosen {computer}.")
                 print("so, you Loose. :( ")
                 life_user = life_user - 1
                 print(f"You still have: {life_user} lives")
                 print(f"The computer has still {life_computer} live/s.")
-                print("--------------------------------------------------------")
-                print("NEXT TURN - LET'S DO IT")
-                print("--------------------------------------------------------")        
-
+                
             elif computer == "Rock":
                 print(f"The computer has choosen {computer}.")
                 print("You're dammm goood.")
                 life_computer = life_computer - 1
                 print(f"You still have: {life_user} lives")
                 print(f"The computer has still {life_computer} live/s.")
-                print("--------------------------------------------------------")
-                print("NEXT TURN - LET'S DO IT")
-                print("--------------------------------------------------------")        
-
+          
+       
+    print("--------------------------------------------------------")
+    print("NEXT TURN - LET'S DO IT")
+    print("--------------------------------------------------------")        
+ 
 
 if life_user == 0:
     print("Game Over")
